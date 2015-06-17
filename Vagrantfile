@@ -13,9 +13,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #config.ssh.forward_agent = true
   
   config.vm.provider :aws do |aws, override|
-    aws.access_key_id = 'AKIAITM7G5JO4IC3VURA'      # Replace this
-    aws.secret_access_key = '3OhbC9oY85viy0bu56lBQyDqmTF4qFN5e9kb25GW'  # Replace this
-    aws.keypair_name = 'Moved'       # Replace this
+    aws.access_key_id = '*******'      # Replace this
+    aws.secret_access_key = '*******'  # Replace this
+    aws.keypair_name = 'mykey'       # Replace this
     aws.ami = 'ami-ffcef4cf'        # ubuntu 12.04
     override.ssh.username = 'ubuntu'
     override.ssh.private_key_path = '/home/bob/Moved.pem'
